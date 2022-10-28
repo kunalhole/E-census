@@ -1,6 +1,11 @@
 import Image from "next/image"
-
+import { useRouter } from "next/router"
 const HeroSection = () => {
+  const router = useRouter()
+
+  const handleChange = () => {
+    router.push("/manger")
+  }
   return (
     <div className="w-full h-screen flex items-center ">
       <div className=" relative w-full h-max flex items-center justify-evenly">
@@ -17,7 +22,11 @@ const HeroSection = () => {
             Let&apos;s <span className="italic text-rear">Census</span> it
             Effectively!
           </h1>
-          <button className="bg-secondary p-3 rounded-md text-primary  sm:text-[32px] text-[20px] hover:bg-rear hover:text-secondary hover:scale-105 transition font-bold active:bg-rear">
+
+          <button
+            onClick={handleChange}
+            className="bg-secondary p-3 rounded-md text-primary  sm:text-[32px] text-[20px] hover:bg-rear hover:text-secondary hover:scale-105 transition font-bold active:bg-rear"
+          >
             Connect Wallet
           </button>
         </div>
