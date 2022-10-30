@@ -25,9 +25,9 @@ const HeroSection = () => {
 
           <button
             onClick={handleChange}
-            className="bg-secondary p-3 rounded-md text-primary  sm:text-[32px] text-[20px] hover:bg-rear hover:text-secondary hover:scale-105 transition font-bold active:bg-rear"
+            className="bg-secondary  rounded-md text-primary font-medium text-base px-4 py-[12px] block mx-auto  text-[18px] hover:bg-rear  hover:scale-105 transition  active:bg-rear"
           >
-            Connect Wallet
+            Let&apos;s Connect
           </button>
         </div>
       </div>

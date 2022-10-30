@@ -6,7 +6,7 @@ export const dashboardSlice = createSlice({
     status: "unAuth",
   },
   reducers: {
-    setDashboard: () => ({ status: "dashborad" }),
+    setDashboard: () => ({ status: "dashboard" }),
     setUnAuth: () => ({ status: "unAuth" }),
     setDifferentChain: () => ({ status: "differentChain" }),
     setNoMetaMask: () => ({ status: "noMetamask" }),

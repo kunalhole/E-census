@@ -19,9 +19,9 @@ const Manger = () => {
   const [metaMask, setMetaMask] = useState("")
 
   const status = useSelector((state) => {
-    status: state.dashboard.status
+    state.dashboard.status
   })
-
+  console.log(status)
   const dispatch = useDispatch()
 
   //To check whether their is metamask is installed or not
@@ -74,10 +74,10 @@ const Manger = () => {
       dispatch(setNoMetaMask())
     }
 
-    return () => {
-      metaMask?.removeListener("accountsChanged", accountsChangedHandler)
-      metaMask?.removeListener("chainChanged", chainChangedHandler)
-    }
+    // return () => {
+    //   metaMask?.removeListener("accountsChanged", accountsChangedHandler)
+    //   metaMask?.removeListener("chainChanged", chainChangedHandler)
+    // }
   }, [metaMask])
 
   // user state mangement
@@ -120,7 +120,7 @@ const Manger = () => {
       ) : status === "dashboard" ? (
         <Dashboard metaMask={metaMask} />
       ) : (
-        <NoMetamask metaMask={metaMask} />
+        <UnAuth />
       )}
     </div>
   )

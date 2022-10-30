@@ -1,12 +1,11 @@
 import Navbar from "../Navbar"
 
-const Dashboard = () => {
+const Dashboard = ({ metaMask }) => {
   return (
     <div>
       <Navbar />
-      <div className="w-full h-screen flex justify-center items-center">
-        <h1>Dashboard Page</h1>
-        <h1>Dashboard Page</h1>
+      <div className="w-full h-screen flex justify-center items-center bg-yellow-300">
+        <h1>Page</h1>
       </div>
     </div>
   )

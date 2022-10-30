@@ -1,12 +1,12 @@
 import Navbar from "../Navbar"
 
-const NoMetamask = () => {
+const NoMetamask = ({ metaMask }) => {
+  console.log(metaMask)
   return (
     <div>
       <Navbar />
-      <div className="w-full h-screen flex justify-center items-center">
-        <h1>Dashboard Page</h1>
-        <h1>Dashboard Page</h1>
+      <div className="w-full h-screen flex justify-center items-center bg-yellow-200">
+        <h1>NoMetamask Page</h1>
       </div>
     </div>
   )
