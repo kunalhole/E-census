@@ -15,12 +15,10 @@ import DifferentChain from "../../components/DifferentChain"
 import Dashboard from "../../components/Dashboard"
 import NoMetamask from "../../components/NoMetamask"
 
-const Manger = () => {
+const Manager = () => {
   const [metaMask, setMetaMask] = useState("")
 
-  const status = useSelector((state) => {
-    state.dashboard.status
-  })
+  const status = useSelector((state) => state.dashboard.status)
   console.log(status)
   const dispatch = useDispatch()
 
@@ -120,10 +118,10 @@ const Manger = () => {
       ) : status === "dashboard" ? (
         <Dashboard metaMask={metaMask} />
       ) : (
-        <UnAuth />
+        <NoMetamask />
       )}
     </div>
   )
 }
 
-export default Manger
+export default Manager

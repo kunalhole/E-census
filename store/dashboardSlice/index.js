@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 export const dashboardSlice = createSlice({
   name: "dashboard",
   initialState: {
-    status: "unAuth",
+    status: "NoMetamask",
   },
   reducers: {
     setDashboard: () => ({ status: "dashboard" }),

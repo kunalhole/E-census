@@ -4,7 +4,7 @@ const HeroSection = () => {
   const router = useRouter()
 
   const handleChange = () => {
-    router.push("/manger")
+    router.push("/manager")
   }
   return (
     <div className="w-full h-screen flex items-center ">
