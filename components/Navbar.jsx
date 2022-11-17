@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex items-center w-full h-full px-10 justify-between">
         <Link href="/">
           <h1 className="text-[32px] font-semibold cursor-pointer text-rear">
-            E-census
+            E-Ganana
           </h1>
         </Link>
 
