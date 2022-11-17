@@ -4,8 +4,8 @@ const Dashboard = ({ metaMask }) => {
   return (
     <>
       <Navbar />
-      <div className="absolute w-full h-screen flex justify-center items-center bg-primary">
-        <form className="w-full max-w-lg">
+      <div className="relative w-full h-screen flex justify-center items-center bg-primary">
+        <form className=" absolute w-[70%] h-[70%] md:w-max md:h-[50%]">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
@@ -15,14 +15,15 @@ const Dashboard = ({ metaMask }) => {
                 First Name
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-first-name"
                 type="text"
                 placeholder="Karan"
+                required="true"
               />
-              <p className="text-red-500 text-xs italic">
+              {/* <p className="text-red-500 text-xs italic">
                 Please fill out this field.
-              </p>
+              </p> */}
             </div>
             <div class="w-full md:w-1/2 px-3">
               <label
@@ -36,6 +37,7 @@ const Dashboard = ({ metaMask }) => {
                 id="grid-last-name"
                 type="text"
                 placeholder="Bhosale"
+                required="true"
               />
             </div>
           </div>
@@ -53,6 +55,7 @@ const Dashboard = ({ metaMask }) => {
                 type="text"
                 datatype="adhaar-bumber"
                 placeholder="************"
+                required="true"
               />
               <p className="text-gray-600 text-xs italic">
                 Enter correct Aadhaar number
@@ -72,6 +75,7 @@ const Dashboard = ({ metaMask }) => {
                 id="grid-city"
                 type="text"
                 placeholder="Age"
+                required="true"
               />
             </div>
             <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
@@ -107,13 +111,14 @@ const Dashboard = ({ metaMask }) => {
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="grid-zip"
               >
-                Zip
+                Mobile Number
               </label>
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-zip"
-                type="text"
-                placeholder="90210"
+                type="number"
+                placeholder="1234567890"
+                required="true"
               />
             </div>
           </div>
