@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false)
@@ -9,7 +10,7 @@ const Navbar = () => {
     setSideNav(!sideNav)
   }
   return (
-    <header className="fixed z-[100] w-full bg-secondary h-20">
+    <header className="sticky z-[100] top-0 w-full bg-secondary h-20">
       <div className="flex items-center w-full h-full px-10 justify-between">
         <Link href="/">
           <h1 className="text-[32px] font-semibold cursor-pointer text-rear">
@@ -26,7 +27,7 @@ const Navbar = () => {
               <li className="ml-10 uppercase hover:border-b">contact</li>
             </Link>
             <Link href="/sitemap ">
-              <li className="ml-10 uppercase hover:border-b">sitemap</li>
+              <li className="ml-10 uppercase hover:border-b">Statistics</li>
             </Link>
           </ul>
           <div
@@ -71,7 +72,7 @@ const Navbar = () => {
                 <li className="py-4 text-sm hover:border-b">contact</li>
               </Link>
               <Link href="/sitemap ">
-                <li className="py-4 text-sm  hover:border-b">sitemap</li>
+                <li className="py-4 text-sm  hover:border-b">Statistics</li>
               </Link>
             </ul>
           </div>

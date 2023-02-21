@@ -1,13 +1,14 @@
+import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
+import SiteMap from "../components/SiteMap"
 const sitemap = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <main className="w-full h-screen flex items-center justify-center">
-        <h1>SiteMap Page</h1>
-      </main>
-    </div>
+      <SiteMap />
+      <Footer />
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 import Navbar from "../Navbar"
 import Image from "next/image"
+import Footer from "../Footer"
 const UnAuth = ({ metaMask }) => {
   const connectWallet = async () => {
     await metaMask.request({
@@ -7,9 +8,9 @@ const UnAuth = ({ metaMask }) => {
     })
   }
   return (
-    <>
+    <main className="flex flex-col min-h-screen w-full">
       <Navbar />
-      <div className="w-full absolute h-screen flex justify-center items-center bg-primary">
+      <div className="flex flex-col flex-1 items-center">
         <div className="relative max-w-2xl h-max flex flex-col items-center justify-center space-y-10 p-5 mt-5">
           <h1 className="font-semibold text-[24px] sm:text-[32px] text-center">
             Connect using your{" "}
@@ -31,7 +32,8 @@ const UnAuth = ({ metaMask }) => {
           </button>
         </div>
       </div>
-    </>
+      <Footer />
+    </main>
   )
 }
 
