@@ -63,16 +63,16 @@ const Footer = () => {
           <a
             href="https://twitter.com/kunalhole"
             target="_blank"
-            title="Kunal's Instagram"
+            title="Kunal's Twitter"
             className="inline-block"
             rel="noreferrer"
           >
             <Image
-              src="/instagram.svg"
+              src="/twitter.svg"
               className="cursor-pointer dark:opacity-[0.5]"
               width={35}
               height={35}
-              alt="instagram"
+              alt="twitter"
             />
           </a>
           <a
@@ -93,16 +93,16 @@ const Footer = () => {
           <a
             href="https://instagram.com/_kunal_hole_"
             target="_blank"
-            title="Kunal's Twitter"
+            title="Kunal's Instagram"
             className="inline-block"
             rel="noreferrer"
           >
             <Image
-              src="/twitter.svg"
+              src="/instagram.svg"
               className="cursor-pointer dark:opacity-[0.5]"
               width={35}
               height={35}
-              alt="twitter"
+              alt="instagram"
             />
           </a>
         </div>
