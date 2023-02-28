@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="-mb-4 sm:mb-0 space-x-5">
           <a
-            href="https://twitter.com/SushantGarudkar"
+            href="https://twitter.com/kunalhole"
             target="_blank"
             title="Kunal's Instagram"
             className="inline-block"
@@ -76,7 +76,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://github.com/kunalhole"
             target="_blank"
             title="Kunal's Github"
             className="inline-block"
@@ -91,7 +91,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://instagram.com/garudkar_sush"
+            href="https://instagram.com/_kunal_hole_"
             target="_blank"
             title="Kunal's Twitter"
             className="inline-block"

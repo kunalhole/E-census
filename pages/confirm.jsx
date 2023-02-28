@@ -25,7 +25,7 @@ const Greeting = () => {
             <span></span> is recorded
           </p>
           <button
-            className="bg-secondary  rounded-md text-primary font-medium text-base px-4 py-[12px] block mx-auto  text-[18px] hover:bg-rear  hover:scale-105 transition  active:bg-rear"
+            className="bg-secondary  rounded-md  text-primary font-medium text-base px-4 py-[12px] block mx-auto  text-[18px] hover:bg-rear  hover:scale-105 transition  active:bg-rear"
             formTarget="_blank"
             onClick={() => router.push("authentication")}
           >
