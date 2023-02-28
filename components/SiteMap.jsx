@@ -19,7 +19,7 @@ const Statistics = () => {
       <p>
         <ArrowSmDownIcon className="h-5 w-5 md:h-8 md:w-8 animate-bounce" />
       </p>
-      <div className=" flex flex-col space-y-8 space-x-5 md:flex-row md:space-x-6 md:mt-10  text-secondary">
+      <div className=" flex flex-col space-y-8 space-x-5 md:flex-row md:space-x-6 md:mt-10  text-secondary items-center">
         <a
           href="https://public.tableau.com/app/profile/r.j2396/viz/shared/5WMSBP6K2"
           target="_blank"
@@ -36,12 +36,12 @@ const Statistics = () => {
             />
           </div>
         </a>
-        <a href="https://public.tableau.com/app/profile/r.j2396/viz/shared/B77PJ42BG">
-          <div
-            className="space-y-5 cursor-pointer flex flex-col items-center justify-center space-x-6 shadow-md p-3 rounded-full shadow-secondary/25 md:shadow-md md:rounded-lg"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <a
+          href="https://public.tableau.com/app/profile/r.j2396/viz/shared/B77PJ42BG"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="space-y-5 cursor-pointer flex flex-col items-center justify-center space-x-6 shadow-md p-3 rounded-full shadow-secondary/25 md:shadow-md md:rounded-lg">
             <h1 className="text-xl uppercase mb-2">Literacy</h1>
             <Image
               src="/literacy.svg"
@@ -53,7 +53,11 @@ const Statistics = () => {
           </div>
         </a>
 
-        <a href="https://public.tableau.com/app/profile/r.j2396/viz/shared/8SPH4PWZ7">
+        <a
+          href="https://public.tableau.com/app/profile/r.j2396/viz/shared/8SPH4PWZ7"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div
             className="space-y-5 cursor-pointer flex flex-col items-center justify-center space-x-6 shadow-md p-3 rounded-full shadow-secondary/25 md:shadow-md md:rounded-lg"
             target="_blank"
